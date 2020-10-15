@@ -1,0 +1,6 @@
+function V = inverse_Morton_Code(mc)
+
+mc = dec2bin(mc);
+V = [bin2dec(mc(:,1:3:end)) ...
+	bin2dec(mc(:,2:3:end)) ...
+	bin2dec(mc(:,3:3:end))];
